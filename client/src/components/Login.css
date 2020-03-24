@@ -1,0 +1,65 @@
+.Login {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "top" "mid";
+    justify-items: center;
+  }
+  
+  .Login img{
+    width: 150px;
+    grid-area : top;
+    align-self: end;
+    margin-bottom: 10px;
+  }
+  
+  .Login div{
+    grid-area: mid;
+    font-size: larger;
+  }
+  
+  .Login div input{
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: large;
+    padding: 10px 10px;
+    border-color: lightgray;
+    width : 300px;
+    height : 30px;
+    
+  }
+  
+  .Login div label{
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  
+  .Login div button{
+    background-color: lightgray;
+    border-style: solid;
+    border-color: lightgray;
+    font-size: larger;
+    
+    padding: 7px 10px;
+    border-radius: 5px;
+    width : 200px;
+    margin-left : 70px;
+  }
+  
+  .Login div button:hover{
+    background-color: gray;
+    border-color: gray;
+  }
+
+  .Login div #signup{
+    font-size: small;
+    margin-left : 150px;
+  }
+  
+  @media(max-width : 600px){
+    .Login{
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "top" "mid";
+    }
+  }
+  
